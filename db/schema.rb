@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_11_08_152708) do
 
-  create_table "accounttransfers", force: :cascade do |t|
+  create_table "account_transfers", force: :cascade do |t|
     t.integer "transmitter_id"
     t.integer "receiver_id"
     t.integer "transferable_id"
@@ -22,12 +22,12 @@ ActiveRecord::Schema.define(version: 2018_11_08_152708) do
   end
 
   create_table "documents", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id" 
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "socialaccounts", force: :cascade do |t|
+  create_table "social_accounts", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

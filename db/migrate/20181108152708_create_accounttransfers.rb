@@ -1,6 +1,6 @@
-class CreateAccounttransfers < ActiveRecord::Migration[5.2]
+class CreateAccountTransfers < ActiveRecord::Migration[5.2]
   def change
-    create_table :accounttransfers do |t|
+    create_table :account_transfers do |t|
       t.integer :transmitter_id
       t.integer :receiver_id
       t.integer :transferable_id
