@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AccounttransferTest < ActiveSupport::TestCase
+class SocialAccountTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
