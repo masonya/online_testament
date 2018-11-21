@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SocialAccountTest < ActiveSupport::TestCase
+class InstructionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

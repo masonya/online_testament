@@ -10,6 +10,16 @@
   </head>
 
   <body>
+
+ <section class="nav">
+   <h1 class="logo">App name</h1>
+   <dl class="menu">
+  <h2>Передаю</h2>
+    <dd><%= link_to 'Документы', documents_path %></dd>
+    <dd><%= link_to 'Наставления', instructions_path %></dd>
+  </dl>
+</section>
+
     <%= yield %>
   </body>
 </html>

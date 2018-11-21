@@ -1,0 +1,75 @@
+// Place all the styles related to the Documents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+h2 {
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+.main {
+  width: 76vw;
+  height: 100vh;
+  padding-left: 300px;
+  padding-top: 40px;
+}
+
+.cards_area {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 220px;
+  height: 150px;
+  border-radius: 3%;
+  position: relative;
+  margin-left: 50px;
+  background-color: #F9F9F9;
+  border-width: 1px;
+  border-color: #B7B7B7;
+  border-style: solid;
+}
+
+.card_new {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ //  .card:first-of-type {
+ //    margin-left: 0px;
+ // }
+
+
+.action_area {
+  width: 100%;
+  height: 20px;
+  margin-top: 120px;
+  border-radius: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_title {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  text-align: center;
+
+}

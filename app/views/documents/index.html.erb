@@ -1,5 +1,53 @@
-<h1>Завещания</h1>
 
-<% @documents.each do |document| %>
-  <h2><% document.title %></h2>
-<% end %>
+
+<section class="main">
+  <p id="notice"><%= notice %></p>
+    <h1>Документы</h1>
+
+    <section class="cards_area">
+
+
+          <!-- <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th colspan="3"></th>
+            </tr>
+          </thead> -->
+
+
+          <tbody>
+            <% @documents.each do |document| %>
+
+
+            <div class="card">
+
+                <div class="card_title">
+                  <h2><%= document.title %></h2>
+                </div>
+
+                <div class="action_area">
+                  <td><%= link_to 'Show', document %></td>
+                  <td><%= link_to 'Edit', edit_document_path(document) %></td>
+                  <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </div>
+                
+            </div>
+
+            <% end %>
+          </tbody>
+
+
+      <br>
+
+                <div class="card">
+                  <div class="card_new">
+                    <%= link_to 'Новый документ', new_document_path %>
+                  </div>
+                </div>
+
+    </section>
+
+
+
+</section>
